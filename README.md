@@ -1,15 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
+My-portfolio
 
 > Description the project.
+In this project, i create my first student portfolio at Microverse.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
 
 ## Live Demo (if available)
 
@@ -25,10 +26,12 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+vscode
 
 ### Setup
 
 ### Install
+npx installed
 
 ### Usage
 
@@ -41,16 +44,13 @@ To get a local copy up and running follow these simple example steps.
 ## Authors
 
 👤 **Author1**
+Diana
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Diana-Duya](https://github.com/Diana-Duya)
+- Twitter: [@Dianaduya2](https://twitter.com/Dianaduya2)
+- LinkedIn: [@Dianaduya2](https://linkedin.com/in/Dianaduya2)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -64,9 +64,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Raphael 
+
 
 ## 📝 License
 
