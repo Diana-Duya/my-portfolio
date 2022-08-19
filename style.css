@@ -1,4 +1,6 @@
+
 * {
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -7,14 +9,14 @@
 }
 
 body {
-  fill: solid;
-  color: #1c1a19;
+  width: 375px;
+
 }
 
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 92px;
   background-color: #3c3a39;
 }
@@ -28,6 +30,7 @@ nav {
   font-size: 18px;
   line-height: 24px;
   vertical-align: center;
+  padding-left: 45%;
 }
 
 #flex {
@@ -36,26 +39,27 @@ nav {
   align-items: flex-start;
   padding: 120px 24px;
   gap: 12px;
-  height: 590px;
+  /* height: 700px; */
   background-color: #1c1a19;
   background-image: url("image/Group.png");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right 120%;
+  height: 650px;
 }
 
 .maimenu {
   color: black;
+  padding-right: 8%;
 }
 
 .first-heading {
   /* width: 325px; */
   font-family: Crete Round, sans-serif;
-  font-style: regular;
-  font-size: 56px;
+  /* font-style: regular; */
+  font-size: 45px;
   line-height: 92px;
   vertical-align: top;
   letter-spacing: 0.37px;
-  fill: solid;
   color: #ff6b00;
   padding-top: 20px;
 }
@@ -63,15 +67,15 @@ nav {
 .secon-heading {
   /* width: 325px; */
   font-family: Roboto, sans-serif;
-  font-style: bold;
-  font-size: 24px;
+  /* font-style: bold; */
+  font-size: 18px;
   line-height: 32px;
   color: #fff5e1;
   padding-top: 20px;
 }
 
 .details {
-  width: 345px;
+  width: 325px;
   font-family: Poppins, sans-serif;
   font-style: regular;
   font-size: 16px;
@@ -84,5 +88,5 @@ nav {
   display: flex;
   gap: 1rem;
   padding: 0 20px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
