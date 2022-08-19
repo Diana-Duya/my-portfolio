@@ -10,7 +10,6 @@
 
 body {
   width: 375px;
-
 }
 
 nav {
@@ -39,7 +38,6 @@ nav {
   align-items: flex-start;
   padding: 120px 24px;
   gap: 12px;
-  /* height: 700px; */
   background-color: #1c1a19;
   background-image: url("image/Group.png");
   background-repeat: no-repeat;
@@ -53,9 +51,7 @@ nav {
 }
 
 .first-heading {
-  /* width: 325px; */
   font-family: Crete Round, sans-serif;
-  /* font-style: regular; */
   font-size: 45px;
   line-height: 92px;
   vertical-align: top;
@@ -65,9 +61,7 @@ nav {
 }
 
 .secon-heading {
-  /* width: 325px; */
   font-family: Roboto, sans-serif;
-  /* font-style: bold; */
   font-size: 18px;
   line-height: 32px;
   color: #fff5e1;
