@@ -50,13 +50,11 @@ display: flex;
     color: black;
 }
 .first-heading {
-    width: 375px;
+    /* width: 325px; */
     font-family: Crete Round;
     font-style: Regular;
     font-size: 56px;
-    line-height: 64px;
-    line-height: 90%;
-    align: Left;
+    line-height: 92px;
     vertical-align: Top;
     letter-spacing: 0.37px;
     fill: Solid;
@@ -65,25 +63,22 @@ display: flex;
 
 }
 .secon-heading {
-   width: 375px;
+   /* width: 325px; */
     Font-family: Roboto;
     Font-style: Bold;
     Font-size: 24px;
     Line-height: 32px;
-    Line-height: 114%;
-    align: Left;
     color: #fff5e1;
     padding-top: 20px;
 
 }
 
 .details {
-width: 375px;
+ width: 345px;
 font-family: Poppins;
 font-style: Regular;
 font-size: 16px;
 line-height: 24px;
-line-height: 100%;
 color: #fff;
 padding-top: 20px;
 }
