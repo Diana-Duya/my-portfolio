@@ -85,6 +85,8 @@ nav {
   padding-top: 15px;
 }
 
+/* My Work Section */
+
 .first {
   font-family: Crete Round, sans-serif;
   font-style: regular;
@@ -203,6 +205,11 @@ nav {
   font-size: 20px;
   line-height: 24px;
   margin-top: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 
 .profession {
