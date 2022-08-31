@@ -429,7 +429,7 @@ nav {
   justify-content: flex-start;
   align-items: center;
   height: 1000px;
-  background: #ffffff;
+  background: #fff;
   width: 375px;
   padding: 120px 24px 120px 24px;
 }
@@ -486,7 +486,7 @@ nav {
   line-height: 24px;
   margin-top: 24px;
   margin-bottom: 24px;
-  background: #FBF8F7;
+  background: #fbf8f7;
 }
 
 .button-cont {
