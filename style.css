@@ -335,12 +335,13 @@ nav ul {
   /* width: 375px; */
   height: 1901px;
   margin-top: 100px;
+  outline: 4px solid red;
 }
 
 .about-img {
   background-image: url("image/Backgorund.svg");
   background-repeat: no-repeat;
-  background-position: right 90%;
+  background-position: bottom 75% right;
   height: 590px;
 }
 
@@ -355,13 +356,14 @@ nav ul {
 }
 
 .info {
-  width: 325px;
   font-family: Poppins, sans-serif;
   font-style: regular;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
   padding-top: 20px;
+  outline: 4px solid white;
+  width: 80%;
 }
 
 .last-btn {
@@ -697,18 +699,20 @@ textarea {
   }
 
   .first {
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", sans-serif;
     font-style: regular;
-    font-size: 20px;
-    line-height: 52px !important;
+    font-size: 40px;
+    line-height: 52px;
     color: #091e42;
+    height: 52px;
+    width: 32%;
     margin-top: 0;
     letter-spacing: 2px;
     font-weight: 400;
   }
 
   .first-line {
-    width: 794.000000000003px;
+    width: 68%;
     height: 1px solid #212121;
   }
 
@@ -746,8 +750,6 @@ textarea {
     justify-content: space-between;
     height: 52px;
     width: 1133px;
-
-    /* text-align: right; */
     left: 35.5px;
     top: 130px;
     margin-bottom: 114px;
@@ -861,7 +863,9 @@ textarea {
   }
 
   .action-btn {
-    display: none;
+    display: flex;
+    position: absolute;
+    bottom: 0;
   }
 
   .one {
@@ -900,7 +904,7 @@ textarea {
   }
 
   .profession1 {
-    height: 376px !important;
+    height: 435px;
     background: url(image/backgroundimg4.png) !important;
   }
 
@@ -910,10 +914,12 @@ textarea {
 
   .profession2 {
     background: url(image/backgroundimg2.png) !important;
+    padding-top: 27%;
   }
 
   .profession3 {
     background: url(image/backgroundimg3.png) !important;
+    padding-top: 27%;
   }
 
   .profession {
@@ -922,14 +928,13 @@ textarea {
     background-size: cover;
     height: 435px;
     width: 369px;
+    padding-top: 27%;
   }
 
   .style-grid {
     height: 435px;
     width: 369px;
-    left: 0;
-    top: 0;
-    border-radius: 0;
+    position: relative;
   }
 
   .pro {
@@ -1010,17 +1015,26 @@ textarea {
     flex-direction: row;
     height: 58px;
     width: 369px;
-    left: 0;
-    top: 0;
-    border-radius: 0;
-    background-color: #ff6b00;
-    color: #fff;
+    background-color: transparent;
+    color: transparent;
     margin-top: 0;
     border: none;
     font-family: Inter, sans-serif;
     font-style: bold;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .second-btn:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+    border: 2px solid #f55800;
+  }
+
+  .second-btn:focus {
+    background-color: #e05304;
+    color: #f4f1f0;
+    border: 2px solid #e05304;
   }
 
   #about {
@@ -1036,12 +1050,14 @@ textarea {
 
   .styl {
     margin-left: 142px;
+    margin-top: 10rem;
+    width: 55%;
   }
 
   .about-img {
     background-image: url("image/illustration-about\ me.svg");
     background-repeat: no-repeat;
-    background-position: right 70%;
+    background-position: bottom 55% right;
     height: 590px;
     width: 100%;
   }
@@ -1063,9 +1079,7 @@ textarea {
     line-height: 24px;
     color: #fff;
     margin-top: 24px;
-
-    /* height: 148px;
-  width: 566px; */
+    width: 80;
   }
 
   .last-btn {
