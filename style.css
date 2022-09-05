@@ -937,6 +937,13 @@ textarea {
     position: relative;
   }
 
+  .style-grid:hover {
+    cursor: default;
+    transform: translateY(-5px);
+    border: 1px solid gray;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
+  }
+
   .pro {
     font-family: 'Crete Round', serif;
     font-style: regular;
