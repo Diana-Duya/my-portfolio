@@ -2,7 +2,7 @@
 # Project image
 ![](./image/Screenshot%20(391).png)
 
-Here is a link to my [website](https://diana-duya.github.io/my-portfolio/)
+Here is a link to my [website](https://diana-duya.github.io/my-portfolio/) portfolio.
 
 # Project Name
 My-portfolio
