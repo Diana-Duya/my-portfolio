@@ -213,7 +213,7 @@ nav ul {
   width: 127px;
   height: 48px;
   background-color: #ff6b00;
-  color: #fff;
+  color: black;
   border: none;
   font-family: Inter, sans-serif;
   font-style: bold;
@@ -852,7 +852,7 @@ textarea {
     width: 127px;
     height: 48px;
     background-color: #ff6b00;
-    color: #fff;
+    color: black;
     border: none;
     font-family: Inter, sans-serif;
     font-style: bold;
@@ -950,7 +950,7 @@ textarea {
     line-height: 44px;
     width: 295px;
     padding-top: 84px;
-    color: #fff;
+    color: black;
   }
 
   .paragraph2 {
@@ -959,7 +959,7 @@ textarea {
     font-size: 16px;
     line-height: 24px;
     padding-top: 18px;
-    color: #fff;
+    color: black;
   }
 
   .profession ul {
@@ -1089,6 +1089,7 @@ textarea {
   }
 
   .last-btn {
+    font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1096,7 +1097,7 @@ textarea {
     width: 127px;
     height: 48px;
     background-color: #ff6b00;
-    color: #fff;
+    color: black;
     border: none;
     margin-top: 30px;
   }
