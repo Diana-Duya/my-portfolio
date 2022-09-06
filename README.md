@@ -7,9 +7,21 @@ Here is a link to my [website](https://diana-duya.github.io/my-portfolio/) portf
 # Project Name
 My-portfolio
 
-> Description the project.
+> Description the project:
 In this project, i create my first student portfolio at Microverse.
 
+### Steps :
+- Add Linters for HTML/CSS.
+- Use Mobile-first approach.
+- Use best practices for HTML & CSS.
+- Update README file.
+- Add Mark up to the .html file.
+- Add style to the main header.
+- Use images and backgrounds to enhance the look of the website.
+- Add second section (Work-About).
+- Add contact Form.
+- Add Desktop version with media queries.
+- Check and correct accessibility errors.
 
 ## Built With
 
