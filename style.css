@@ -1213,6 +1213,10 @@ textarea {
     color: #979493;
   }
 
+  .full-name label {
+    display: none;
+  }
+
   .hor {
     height: 1px;
     width: 684px;
@@ -1234,6 +1238,10 @@ textarea {
     border-radius: nullpx;
   }
 
+  .email label {
+    display: none;
+  }
+
   .textarea {
     height: 90px;
     width: 660px;
@@ -1244,6 +1252,10 @@ textarea {
     font-size: 15px;
     line-height: 24px;
     background: #fbf8f7;
+  }
+
+  .textarea label {
+    display: none;
   }
 
   .button-cont {
@@ -1260,7 +1272,7 @@ textarea {
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
-    color: #fff;
+    color: black;
     margin-bottom: 124px;
     border: none;
   }
