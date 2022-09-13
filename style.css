@@ -39,13 +39,13 @@ nav {
   top: 40px;
   gap: 20px;
   flex-direction: column;
-  background: #3C3A39;
+  background: #3c3a39;
   width: 100%;
   transition: 0.3s;
   margin: auto;
   height: 650px;
   padding-left: 20px;
-  padding-top: 50px;  
+  padding-top: 50px;
 }
 
 .nav-menu.active {
@@ -57,12 +57,12 @@ nav {
   width: 327px;
   left: 24px;
   top: 92px;
-  border-radius: 0px;
+  border-radius: 0;
   transition: 0.3s ease;
+
   /* margin-top: 90px; */
   padding-bottom: 20px;
-  color: #FFF5E1;
-  ;
+  color: #fff5e1;
   font-size: 2rem;
 }
 
@@ -72,6 +72,16 @@ nav {
 
 .union {
   display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -84,16 +94,6 @@ nav {
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px auto;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
 }
 
 .logo {
@@ -654,7 +654,7 @@ textarea {
 
   .nav {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
   }
 
   .nav-menu {
@@ -674,7 +674,7 @@ textarea {
   .nav-item {
     transition: 0.3s ease;
     color: white;
-    font-size: 1rem;   
+    font-size: 1rem;
   }
 
   .separtor {
