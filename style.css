@@ -24,6 +24,7 @@ header {
 }
 
 nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,8 +32,57 @@ nav {
   margin: auto;
 }
 
-nav ul {
-  display: none;
+.nav-menu {
+  position: absolute;
+  display: flex;
+  left: -150%;
+  top: 40px;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(65, 59, 59);
+  width: 100%;
+  transition: 0.3s;
+  margin: auto;
+  height: 310px;
+  justify-content: center;
+}
+
+.nav-menu.active {
+  left: inherit;
+}
+
+.nav-item {
+  transition: 0.3s ease;
+  margin-top: 90px;
+  padding-bottom: 20px;
+  color: #e05304;
+}
+
+.nav-item:hover {
+  color: whitesmoke;
+}
+
+.bar:nth-child(2) .hamburger.active {
+  opacity: 0;
+}
+
+.bar:nth-child(3) .hamburger.active {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar:nth-child(1) .hamburger.active {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .logo {
@@ -592,16 +642,27 @@ textarea {
     border-radius: 0;
   }
 
-  nav ul {
+  .nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-between !important;
   }
 
-  nav ul li {
+  .nav-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: inherit;
     list-style: none;
     color: #fff;
     padding-right: 24px;
+    align-items: center;
+    justify-content: right;
+  }
+
+  .nav-item {
+    transition: 0.3s ease;
+    color: white;
   }
 
   a {
@@ -609,7 +670,7 @@ textarea {
     color: #fff;
   }
 
-  .hambuger {
+  .hamburger {
     display: none;
   }
 
