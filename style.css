@@ -24,6 +24,7 @@ header {
 }
 
 nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,8 +32,68 @@ nav {
   margin: auto;
 }
 
-nav ul {
+.nav-menu {
+  position: absolute;
+  display: flex;
+  left: -150%;
+  top: 40px;
+  gap: 20px;
+  flex-direction: column;
+  background: #3c3a39;
+  width: 100%;
+  transition: 0.3s;
+  margin: auto;
+  height: 650px;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+.nav-menu.active {
+  left: inherit;
+}
+
+.nav-item {
+  height: 184px;
+  width: 327px;
+  left: 24px;
+  top: 92px;
+  border-radius: 0;
+  transition: 0.3s ease;
+
+  /* margin-top: 90px; */
+  padding-bottom: 20px;
+  color: #fff5e1;
+  font-size: 2rem;
+}
+
+.separtor {
+  width: 280px;
+}
+
+.union {
   display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
 }
 
 .logo {
@@ -340,7 +401,7 @@ nav ul {
 .about-img {
   background-image: url("image/Backgorund.svg");
   background-repeat: no-repeat;
-  background-position: bottom 75% right;
+  background-position: bottom 8% right;
   height: 590px;
 }
 
@@ -361,7 +422,6 @@ nav ul {
   line-height: 24px;
   color: #fff;
   padding-top: 20px;
-  outline: 4px solid white;
   width: 80%;
 }
 
@@ -472,6 +532,10 @@ nav ul {
 .hor {
   height: 1px;
   width: 327px;
+}
+
+.label {
+  display: none;
 }
 
 .email {
@@ -592,16 +656,37 @@ textarea {
     border-radius: 0;
   }
 
-  nav ul {
+  .nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 
-  nav ul li {
+  .nav-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: inherit;
     list-style: none;
     color: #fff;
     padding-right: 24px;
+    align-items: center;
+    justify-content: right;
+    padding-bottom: 40px;
+  }
+
+  .nav-item {
+    transition: 0.3s ease;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .separtor {
+    display: none;
+  }
+
+  .union {
+    display: inline;
   }
 
   a {
@@ -609,7 +694,7 @@ textarea {
     color: #fff;
   }
 
-  .hambuger {
+  .hamburger {
     display: none;
   }
 
