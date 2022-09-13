@@ -39,13 +39,13 @@ nav {
   top: 40px;
   gap: 20px;
   flex-direction: column;
-  align-items: center;
-  background-color: rgb(65, 59, 59);
+  background: #3C3A39;
   width: 100%;
   transition: 0.3s;
   margin: auto;
-  height: 310px;
-  justify-content: center;
+  height: 650px;
+  padding-left: 20px;
+  padding-top: 50px;  
 }
 
 .nav-menu.active {
@@ -53,25 +53,36 @@ nav {
 }
 
 .nav-item {
+  height: 184px;
+  width: 327px;
+  left: 24px;
+  top: 92px;
+  border-radius: 0px;
   transition: 0.3s ease;
-  margin-top: 90px;
+  /* margin-top: 90px; */
   padding-bottom: 20px;
-  color: #e05304;
+  color: #FFF5E1;
+  ;
+  font-size: 2rem;
 }
 
-.nav-item:hover {
-  color: whitesmoke;
+.separtor {
+  width: 280px;
 }
 
-.bar:nth-child(2) .hamburger.active {
+.union {
+  display: none;
+}
+
+.hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.bar:nth-child(3) .hamburger.active {
+.hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-.bar:nth-child(1) .hamburger.active {
+.hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
@@ -81,8 +92,8 @@ nav {
   height: 3px;
   background-color: white;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .logo {
@@ -390,7 +401,7 @@ nav {
 .about-img {
   background-image: url("image/Backgorund.svg");
   background-repeat: no-repeat;
-  background-position: bottom 75% right;
+  background-position: bottom 8% right;
   height: 590px;
 }
 
@@ -411,7 +422,6 @@ nav {
   line-height: 24px;
   color: #fff;
   padding-top: 20px;
-  outline: 4px solid white;
   width: 80%;
 }
 
@@ -644,7 +654,7 @@ textarea {
 
   .nav {
     display: flex;
-    justify-content: space-between !important;
+    justify-content: center; 
   }
 
   .nav-menu {
@@ -658,11 +668,21 @@ textarea {
     padding-right: 24px;
     align-items: center;
     justify-content: right;
+    padding-bottom: 40px;
   }
 
   .nav-item {
     transition: 0.3s ease;
     color: white;
+    font-size: 1rem;   
+  }
+
+  .separtor {
+    display: none;
+  }
+
+  .union {
+    display: inline;
   }
 
   a {
