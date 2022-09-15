@@ -7,6 +7,7 @@
     <title>Diana's portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -34,259 +35,288 @@
         </nav>
     </header>
 <main>
-    <section id="flex">
-      <div class="main-section">
-        <div class="another">
-        <div class="Dee">
-            <div class="first-heading">
-              <h1>Hey There. I'm Diana</h1>
-            </div>
-        <div class="secon-heading">
-            <h2>I’m a Software Developer</h2>
-        </div>
-        <div class="details">
-            <p>I can help you build a product, feature
-               website Look through some of my work
-               and experience! if you like what you see
-               and have a project you need coded
-               don't hesitate to contact me.
-            </p>
-        </div>
-        </div>
-        <div class="social-media">
-            <ul>
-                <li><a href=""><img src="image/github.svg" alt="github-logo"></a></li>
-                <li><a href=""><img src="image/linked-in.svg" alt="linked-in-logo"></a></li>
-                <li><a href=""><img src="image/Vector3.svg" alt="medium-logo"></a></li>
-                <li><a href=""><img src="image/twitter.svg" alt="twitter-logo"></a></li>
-                <li><a href=""><img src="image/medium.svg" alt="Vector (3)-logo"></a></li>
-            </ul>
-        </div>
-    </div>
-    </div>       
-</section>
-<!-- Work Section-->
-<section class="cont">
-    <div class="works" id="link1">
-        <div class="recent">
-                <h2 class="first">My Recent Works</h2>           
-            <hr class="first-line">
-        </div>
-            
-        <div class="cards">
-           <div class="one">
-                    <div class="this-pic">
-                        <img class="picture" src="image/ImgPlaceholder.png" alt="icon">
-                   </div>
-             <div class="post">
-                <h3 class="multi">Multi-Post Stories</h3>
-                <p class="paragraph">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-                </p>
-                <div class="languages">
-                    <ul>
-                        <li class="css">css</li>
-                        <li class="html">html</li>
-                        <li class="bootstrap">bootstrap</li>
-                        <li class="ruby">ruby</li>
-                        </ul>
+    <section class="popup popup1">
+           <h1 class="descr"></h1>
+           <img class="exe" src="image/close.png" alt="x" onclick="closePopup()">
+           <div class="tech">
+               <ul class="techlist">
+                   <li class="tml">html</li>
+                   <li class="btstrap">Bootstrap</li>
+                   <li class="rby">Ruby on rails</li>
+                </ul>
+           </div>
+           <div class="app">
+               <div class="pp">
+                   <img class="pp-img" src="image/Snapshoot Portfolio.png" alt="Snapshoot for popup">
+                 <div class="supprting">
+                 <p class="supp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
+                 </p>
+                 
+                <div>
+                    <a href="" id="link1"><button class="see-live" type="button">See Live</button></a>
+                    <a href="" id="link2"><button class="see-source" type="button">See Source</button></a>
                 </div>
-                <div><button  type="button" class="first-btn">See Project</button></div>
-              </div>
-            </div>
-             <div class="grid-container">
-                <div class="card1">
-                    <div class="style-grid">
-                            <div class="profession profession1">
-                                <div class="first-child">
-                                    <h4 class="pro">Profesional Art Printing Data</h4>
-                                <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                                </p>
-                                <ul>
-                                    <li class="html2">html</li>
-                                    <li class="bootstrap2">bootstrap</li>
-                                    <li class="Ruby2">ruby</li>
-                                </ul>
-                                </div>        
-                            </div>
-                            <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>                            
-                    </div>
-                    <div class="style-grid">
-                        <div class="profession profession2">
-                            <h4 class="pro">Profesional Art Printing Data</h4>
-                            <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                            </p>
-                            <ul>
-                                <li class="html2">html</li>
-                                <li class="bootstrap2">bootstrap</li>
-                                <li class="Ruby2">ruby</li>
-                            </ul>                               
-                        </div>                        
-                     <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>                        
-                </div>
-                <div class="style-grid">
-                    <div class="profession profession3">
-                        <h4 class="pro">Profesional Art Printing Data</h4>
-                        <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                        </p>
-                        <ul>
-                            <li class="html2">html</li>
-                            <li class="bootstrap2">bootstrap</li>
-                            <li class="Ruby2">ruby</li>
-                        </ul>        
-                    </div>
-                    <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>
-                </div>
-                </div>
-                <div class="card2">
-                    <div class="style-grid">    
-                        <div class="profession profession4">
-                            <h4 class="pro">Profesional Art Printing Data</h4>
-                            <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                            </p>
-                            <ul>
-                                <li class="html2">html</li>
-                                <li class="bootstrap2">bootstrap</li>
-                                <li class="Ruby2">ruby</li>
-                            </ul>        
-                        </div>
-                        <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>
-                    </div>
-                    <div class="style-grid">
-                        <div class="profession profession2">
-                            <h4 class="pro">Profesional Art Printing Data</h4>
-                            <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                            </p>
-                            <ul>
-                                <li class="html2">html</li>
-                                <li class="bootstrap2">bootstrap</li>
-                                <li class="Ruby2">ruby</li>
-                            </ul>        
-                        </div>
-                        <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>
-                    </div>
-                    <div class="style-grid">
-                        <div class="profession profession3">
-                            <h4 class="pro">Profesional Art Printing Data</h4>
-                            <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                            </p>
-                            <ul>
-                                <li class="html2">html</li>
-                                <li class="bootstrap2">bootstrap</li>
-                                <li class="Ruby2">ruby</li>
-                            </ul>        
-                        </div>
-                        <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    </div>
-      
-</section>
-<!--about me starts -->
- <section id="about">
-    <div class="about-img">
-        <div class="styl">
-            <h3 class="me">About me</h3>
-                <p class="info">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-                </p>
-            <div class="resume">
-                <button class="last-btn" type="button">Get My Resume</button>
-            </div>
-        </div>
-        <div class="line-cont">
-            <hr class="second-line">
-        </div>  
-   </div>
-    <div class="Lang-sec">
-      <div class="programingl">
-        <div class="heading">
-            <div class="rectangle">
-                <img src="image/Rectangle55.png" alt="rectangle">
-            </div>
-            <div>
-                <h3 class="text1">Language</h3>
-            </div>        
-        </div>
-        <ul>
-            <li>Javascript</li>
-            <li>Ruby</li>
-            <li>Html</li>
-            <li>Css</li>
-        </ul>       
-      </div>
-        <div class="programingl">
-            <div class="heading">
-              <ul>
-                <li><img src="image/Rectangle56.png" alt="square"></li>
-                <li><h3 class="text1">Frameworks</h3></li>
-              </ul>  
+            </div>                 
+                                -->
              </div>
-            <ul>
-                <li>Bootstrap</li> 
-                <li>Ruby on Rails</li> 
-                <li>RSPec</li> 
-                <li>CapyBara</li> 
-                <li>Selenium</li>   
-            </ul>
+           </div>  
+    </section>
+   <div id="blurry">
+    <div class="back"></div>
+    <section id="flex">
+        <div class="main-section">
+          <div class="another">
+          <div class="Dee">
+              <div class="first-heading">
+                <h1>Hey There, I'm Diana</h1>
+              </div>
+          <div class="secon-heading">
+              <h2>I’m a Software Developer</h2>
+          </div>
+          <div class="details">
+              <p>I can help you build a product, feature
+                 website Look through some of my work
+                 and experience! if you like what you see
+                 and have a project you need coded
+                 don't hesitate to contact me.
+              </p>
+          </div>
+          </div>
+          <div class="social-media">
+              <ul>
+                  <li><a href=""><img src="image/github.svg" alt="github-logo"></a></li>
+                  <li><a href=""><img src="image/linked-in.svg" alt="linked-in-logo"></a></li>
+                  <li><a href=""><img src="image/Vector3.svg" alt="medium-logo"></a></li>
+                  <li><a href=""><img src="image/twitter.svg" alt="twitter-logo"></a></li>
+                  <li><a href=""><img src="image/medium.svg" alt="Vector (3)-logo"></a></li>
+              </ul>
+          </div>
       </div>
-       <div class="programingl">
-        <div class="heading">
-          <ul>
-            <li><img src="image/Rectangle57.png" alt="circle"></li>
-            <li><h3 class="text1">Skills</h3></li>
-          </ul>  
-         </div>
-        <ul>
-            <li>Codekit</li> 
-            <li>Github</li> 
-            <li>Codepen</li> 
-            <li>Gitlab</li> 
-            <li>Terminal</li>  
-        </ul>        
-      </div>
-    </div>
- </section>
- <footer class="footer">
-    <div class="last-div" id="link2">
-        <div class="try">
-            <p class="subject">
-                I'm always interested<br> in hearing about new<br> projects, so if you'd<br> like to chat please<br> get in
-            </p>
-        </div>        
-        <form action="https://formspree.io/f/mwkzpjrj" method="post" class="form">
-            <div class="full-name">
-                <label class="label" for="name"> Full Name</label>
-                <input type="text" name="name" id="name" maxlength="30" required placeholder="Full name">
-            </div>
-            <hr class="hor">
-            <div class="email">
-                <label class="label" for="email">E-mail</label>
-                <input type="email" name="email" id="email" required placeholder="Email address">
-            </div>
-            <hr class="hor">
-            <div class="textarea">
-                <label class="label" for="message">Enter text here</label>
-                <textarea name="message" id="message" cols="40" rows="6" required maxlength="500">Enter text here</textarea>
-            </div>
-            <div class="button-cont">
-                <button type="submit"  class="buttonl">Get in touch</button>
+      </div>       
+  </section>
+  <!-- Work Section-->
+  <section class="cont">
+      <div class="works" id="link1">
+          <div class="recent">
+                  <h2 class="first">My Recent Works</h2>           
+              <hr class="first-line">
+          </div>
+              
+          <div class="cards">
+             <div class="one">
+                      <div class="this-pic">
+                          <img class="picture" src="image/ImgPlaceholder.png" alt="icon">
+                     </div>
+               <div class="post">
+                  <h3 class="multi">Multi-Post Stories</h3>
+                  <p class="paragraph">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+                  </p>
+                  <div class="languages">
+                      <ul>
+                          <li class="css">css</li>
+                          <li class="html">html</li>
+                          <li class="bootstrap">bootstrap</li>
+                          <li class="ruby">ruby</li>
+                          </ul>
+                  </div>
+                  <div><button  type="button" class="first-btn" onclick="seeProject()">See Project</button></div>
                 </div>
-        </form>
-    </div> 
-    <hr class="my-hor">
-    <div class="social-media2">
-        <ul>
-            <li class="git"><a href=""><img src="image/github2.png" alt="github-logo"></a></li>
-            <li><a href=""><img src="image/linkedin2.png" alt="linked-in-logo"></a></li>
-            <li><a href=""><img src="image/peace2.png" alt="peace2-logo"></a></li>
-            <li><a href=""><img src="image/twitter2.png" alt="twitter-logo"></a></li>
-            <li><a href=""><img src="image/medium2.png" alt="medium-logo"></a></li>
-        </ul>
-    </div>
-    <img class="shape" src="image/Shape.png" alt="Shape">
- </footer> 
+              </div>
+               <div class="grid-container">
+                  <div class="card1">
+                      <div class="style-grid">
+                              <div class="profession profession1">
+                                  <div class="first-child">
+                                      <h4 class="pro">Profesional Art Printing Data</h4>
+                                  <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                                  </p>
+                                  <ul>
+                                      <li class="html2">html</li>
+                                      <li class="bootstrap2">bootstrap</li>
+                                      <li class="Ruby2">ruby</li>
+                                  </ul>
+                                  </div>        
+                              </div>
+                              <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>                            
+                      </div>
+                      <div class="style-grid">
+                          <div class="profession profession2">
+                              <h4 class="pro">Profesional Art Printing Data</h4>
+                              <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                              </p>
+                              <ul>
+                                  <li class="html2">html</li>
+                                  <li class="bootstrap2">bootstrap</li>
+                                  <li class="Ruby2">ruby</li>
+                              </ul>                               
+                          </div>                        
+                       <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>                        
+                  </div>
+                  <div class="style-grid">
+                      <div class="profession profession3">
+                          <h4 class="pro">Profesional Art Printing Data</h4>
+                          <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                          </p>
+                          <ul>
+                              <li class="html2">html</li>
+                              <li class="bootstrap2">bootstrap</li>
+                              <li class="Ruby2">ruby</li>
+                          </ul>        
+                      </div>
+                      <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>
+                  </div>
+                  </div>
+                  <div class="card2">
+                      <div class="style-grid">    
+                          <div class="profession profession4">
+                              <h4 class="pro">Profesional Art Printing Data</h4>
+                              <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                              </p>
+                              <ul>
+                                  <li class="html2">html</li>
+                                  <li class="bootstrap2">bootstrap</li>
+                                  <li class="Ruby2">ruby</li>
+                              </ul>        
+                          </div>
+                          <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>
+                      </div>
+                      <div class="style-grid">
+                          <div class="profession profession2">
+                              <h4 class="pro">Profesional Art Printing Data</h4>
+                              <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                              </p>
+                              <ul>
+                                  <li class="html2">html</li>
+                                  <li class="bootstrap2">bootstrap</li>
+                                  <li class="Ruby2">ruby</li>
+                              </ul>        
+                          </div>
+                          <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>
+                      </div>
+                      <div class="style-grid">
+                          <div class="profession profession3">
+                              <h4 class="pro">Profesional Art Printing Data</h4>
+                              <p class="paragraph2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                              </p>
+                              <ul>
+                                  <li class="html2">html</li>
+                                  <li class="bootstrap2">bootstrap</li>
+                                  <li class="Ruby2">ruby</li>
+                              </ul>        
+                          </div>
+                          <div class="action-btn"><button class="second-btn" type="button">See Project</button></div>
+                      </div>
+                  </div>
+              
+              </div>
+          </div>
+      </div>
+        
+  </section>
+  <!--about me starts -->
+   <section id="about">
+      <div class="about-img">
+          <div class="styl">
+              <h3 class="me">About me</h3>
+                  <p class="info">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                  </p>
+              <div class="resume">
+                  <button class="last-btn" type="button">Get My Resume</button>
+              </div>
+          </div>
+          <div class="line-cont">
+              <hr class="second-line">
+          </div>  
+     </div>
+      <div class="Lang-sec">
+        <div class="programingl">
+          <div class="heading">
+              <div class="rectangle">
+                  <img src="image/Rectangle55.png" alt="rectangle">
+              </div>
+              <div>
+                  <h3 class="text1">Language</h3>
+              </div>        
+          </div>
+          <ul>
+              <li>Javascript</li>
+              <li>Ruby</li>
+              <li>Html</li>
+              <li>Css</li>
+          </ul>       
+        </div>
+          <div class="programingl">
+              <div class="heading">
+                <ul>
+                  <li><img src="image/Rectangle56.png" alt="square"></li>
+                  <li><h3 class="text1">Frameworks</h3></li>
+                </ul>  
+               </div>
+              <ul>
+                  <li>Bootstrap</li> 
+                  <li>Ruby on Rails</li> 
+                  <li>RSPec</li> 
+                  <li>CapyBara</li> 
+                  <li>Selenium</li>   
+              </ul>
+        </div>
+         <div class="programingl">
+          <div class="heading">
+            <ul>
+              <li><img src="image/Rectangle57.png" alt="circle"></li>
+              <li><h3 class="text1">Skills</h3></li>
+            </ul>  
+           </div>
+          <ul>
+              <li>Codekit</li> 
+              <li>Github</li> 
+              <li>Codepen</li> 
+              <li>Gitlab</li> 
+              <li>Terminal</li>  
+          </ul>        
+        </div>
+      </div>
+   </section>
+   <footer class="footer">
+      <div class="last-div" id="link2">
+          <div class="try">
+              <p class="subject">
+                  I'm always interested<br> in hearing about new<br> projects, so if you'd<br> like to chat please<br> get in
+              </p>
+          </div>        
+          <form action="https://formspree.io/f/mwkzpjrj" method="post" class="form">
+              <div class="full-name">
+                  <label class="label" for="name"> Full Name</label>
+                  <input type="text" name="name" id="name" maxlength="30" required placeholder="Full name">
+              </div>
+              <hr class="hor">
+              <div class="email">
+                  <label class="label" for="email">E-mail</label>
+                  <input type="email" name="email" id="email" required placeholder="Email address">
+              </div>
+              <hr class="hor">
+              <div class="textarea">
+                  <label class="label" for="message">Enter text here</label>
+                  <textarea name="message" id="message" cols="40" rows="6" required maxlength="500">Enter text here</textarea>
+              </div>
+              <div class="button-cont">
+                  <button type="submit"  class="buttonl">Get in touch</button>
+                  </div>
+          </form>
+      </div> 
+      <hr class="my-hor">
+      <div class="social-media2">
+          <ul>
+              <li class="git"><a href=""><img src="image/github2.png" alt="github-logo"></a></li>
+              <li><a href=""><img src="image/linkedin2.png" alt="linked-in-logo"></a></li>
+              <li><a href=""><img src="image/peace2.png" alt="peace2-logo"></a></li>
+              <li><a href=""><img src="image/twitter2.png" alt="twitter-logo"></a></li>
+              <li><a href=""><img src="image/medium2.png" alt="medium-logo"></a></li>
+          </ul>
+      </div>
+      <img class="shape" src="image/Shape.png" alt="Shape">
+   </footer>
+   </div> 
 </main>  
 </body>
 </html>
