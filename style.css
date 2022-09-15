@@ -638,6 +638,184 @@ textarea {
   background: transparent;
 }
 
+.techlist {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+main {
+  position: relative;
+}
+
+.popup {
+  position: fixed;
+  background-color: white;
+  height: 718px;
+  width: 338px;
+  margin-left: 3.8%;
+  top: 60px;
+  padding: 16px;
+  border: 1px solid #010614;
+  z-index: 1000000;
+  border-radius: 8px;
+}
+
+.popup1 {
+  display: none;
+}
+
+.exe {
+  position: absolute;
+  top: 2%;
+  left: 87% !important;
+}
+
+#blurry {
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  background: black;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  opacity: 0.6;
+  display: none;
+}
+
+.pp-img {
+  height: 220px;
+  width: 311px;
+
+  /* left: 16px; */
+  top: 170px;
+  border-radius: 0;
+  right: 20%;
+
+  /* margin: auto; */
+}
+
+.descr {
+  height: 82px;
+  width: 259px;
+  left: 0;
+  top: 0;
+  border-radius: nullpx;
+}
+
+.supp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  width: 311px;
+  height: 220px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 10px;
+}
+
+.supprting {
+  display: flex;
+  flex-direction: column;
+}
+
+.tml {
+  height: 36px;
+  width: 55px;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  padding: 10px 12px 10px 12px;
+  border: 1px solid #979493;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+.btstrap {
+  height: 36px;
+  width: 90px;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  padding: 10px 12px 10px 12px;
+  border: 1px solid #979493;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+.rby {
+  height: 36px;
+  width: 109px;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  padding: 10px 12px 10px 12px;
+  border: 1px solid #979493;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+.see-live {
+  height: 48px;
+  width: 134px;
+  left: 0;
+  top: 4px;
+  border-radius: 0;
+  padding: 12px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  margin-top: 282px;
+}
+
+.see-source {
+  height: 48px;
+  width: 159px;
+  left: 0;
+  top: 4px;
+  border-radius: 0;
+  padding: 12px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+}
+
 @media screen and (min-width: 768px) {
   * {
     font-family: 'Roboto', sans-serif;
@@ -1417,5 +1595,180 @@ textarea {
     outline: none;
     border: none;
     background: transparent;
+  }
+
+  .popup {
+    height: 631px;
+    width: 1156px;
+    top: 2%;
+    background: #fff;
+    position: fixed;
+    left: 2.5%;
+    z-index: 10000000;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  .popup1 {
+    display: none;
+  }
+
+  #blurry {
+    position: relative;
+  }
+
+  .back {
+    position: absolute;
+    background: black;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    opacity: 0.6;
+    display: none;
+  }
+
+  .descr {
+    height: 40px;
+    width: 1056px;
+    left: 0;
+    top: 0;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: #172b4d;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .exe {
+    position: absolute;
+    left: 95% !important;
+    top: 15px;
+  }
+
+  .tml {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 68px;
+    height: 40px;
+    border: 1px solid #8993a4;
+    font-family: 'Inter', sans-serif;
+    font-style: medium;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 12px 18px;
+  }
+
+  .btstrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #8993a4;
+    font-family: Inter, sans-serif;
+    font-style: medium;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 12px 20px;
+  }
+
+  .rby {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 148px;
+    height: 40px;
+    border: 1px solid #8993a4;
+    font-family: Inter, sans-serif;
+    font-style: medium;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 12px 18px;
+  }
+
+  .pp {
+    display: flex;
+    gap: 25px;
+  }
+
+  .pp-img {
+    height: 448px;
+    width: 659px;
+    left: 24px;
+    top: 156px;
+    border-radius: 0;
+  }
+
+  .supp {
+    width: 424px;
+    height: 336px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    border: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .supprting {
+    height: 336px;
+    width: 424px;
+
+    /* left: 708px;
+    top: 156px; */
+    border-radius: 0;
+  }
+
+  .see-live {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    padding: 12px;
+    gap: 12px;
+    position: absolute;
+    width: 134px;
+    height: 48px;
+    left: 708px;
+    background: #f55800;
+    border: none;
+    margin-bottom: 0;
+    top: 285px;
+  }
+
+  .see-source {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center !important;
+    letter-spacing: 0.03em;
+    color: #fff;
+    padding: 12px;
+    gap: 12px;
+    position: absolute;
+    width: 159px;
+    height: 48px;
+    left: 862px;
+    background: #f55800;
+    border: none;
+    top: 566px;
+  }
+
+  .techlist {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 35px;
   }
 }
