@@ -502,7 +502,7 @@ nav {
   background: #fff;
   width: 375px;
   padding-top: 114px;
-} 
+}
 
 .subject {
   width: 327px;
@@ -554,8 +554,7 @@ nav {
   display: flex;
   gap: 12px;
   margin-bottom: 20px;
-  transform: translateY(-20PX);
-
+  transform: translateY(-20px);
 }
 
 .error {
@@ -563,11 +562,10 @@ nav {
   font-style: regular;
   font-size: 15px;
   line-height: 24px;
-  color: grey;
   padding: 10px;
   margin-top: 0;
   display: flex;
-  color: red;
+  color: rgb(238, 64, 64);
 }
 
 .textarea {
@@ -582,8 +580,6 @@ nav {
   margin-bottom: 24px;
   background: #fbf8f7;
 }
-
-
 
 .buttonl {
   height: 48px;

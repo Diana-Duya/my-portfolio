@@ -51,25 +51,22 @@ closeButton.addEventListener('click', () => {
   blurry.style = 'display : none';
 });
 
-
-const form = document.querySelector('.form')
-const email = document.querySelector('#email')
-const error = document.querySelector('.error')
+const form = document.querySelector('.form');
+const email = document.querySelector('#email');
+const error = document.querySelector('.error');
 
 function checkEmail(Diana) {
-    if (Diana.match(/^([a-z0-9_\.\-])+\@(([a-z0-9\-])+\.)+([a-z0-9]{2,4})+$/)) {
-        return true;
-}
-    return false;
+  if (Diana.match(/^([a-z0-9_])+(([a-z0-9])+\.)+([a-z0-9]{2,4})+$/)) {
+    return true;
+  }
+  return false;
 }
 
 form.addEventListener('submit', (e) => {
-if (checkEmail(email.value)) {
+  if (checkEmail(email.value)) {
     error.textContent = '';
-}else {
+  } else {
     e.preventDefault();
-    error.textContent ="Enter a valid email";
-}
+    error.textContent = 'Enter a valid email';
+  }
 });
-
-
