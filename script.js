@@ -50,3 +50,23 @@ closeButton.addEventListener('click', () => {
   popUp.classList.add('popup1');
   blurry.style = 'display : none';
 });
+
+const form = document.querySelector('.form');
+const email = document.querySelector('#email');
+const error = document.querySelector('.error');
+
+function checkEmail(Diana) {
+  if (Diana.match(/^[a-z@.0-9-_]*$/)) {
+    return true;
+  }
+  return false;
+}
+
+form.addEventListener('submit', (e) => {
+  if (checkEmail(email.value)) {
+    error.textContent = '';
+  } else {
+    e.preventDefault();
+    error.textContent = 'Enter a valid email';
+  }
+});

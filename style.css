@@ -497,7 +497,7 @@ nav {
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background: #fff;
   width: 375px;
@@ -550,6 +550,24 @@ nav {
   margin-bottom: 14px;
 }
 
+.button-cont {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  transform: translateY(-20px);
+}
+
+.error {
+  font-family: 'Inter', sans-serif;
+  font-style: regular;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 10px;
+  margin-top: 0;
+  display: flex;
+  color: rgb(238, 64, 64);
+}
+
 .textarea {
   width: 327px;
   height: 114px;
@@ -561,11 +579,6 @@ nav {
   margin-top: 24px;
   margin-bottom: 24px;
   background: #fbf8f7;
-}
-
-.button-cont {
-  display: flex;
-  justify-content: center;
 }
 
 .buttonl {
