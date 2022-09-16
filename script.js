@@ -56,7 +56,7 @@ const email = document.querySelector('#email');
 const error = document.querySelector('.error');
 
 function checkEmail(Diana) {
-  if (Diana.match(/^([a-z0-9_])+(([a-z0-9])+\.)+([a-z0-9]{2,4})+$/)) {
+  if (Diana.match(/^[a-z@.0-9-_]*$/)) {
     return true;
   }
   return false;
