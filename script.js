@@ -64,19 +64,25 @@ function checkEmail(Diana) {
 const custmr = document.getElementById('name');
 const txt = document.getElementById('message');
 
+const testObject = {};
+
 function storeData() {
-  const testObject = {
-    userID: custmr.value,
-    email: email.value,
-    message: txt.value,
-  };
+  testObject.userID = custmr.value;
+  testObject.email = email.value;
+  testObject.message = txt.value;
+
   localStorage.setItem('store', JSON.stringify(testObject));
 }
 const emptyObject = JSON.parse(localStorage.getItem('store'));
-
-custmr.value = emptyObject.userID;
-email.value = emptyObject.email;
-txt.value = emptyObject.message;
+if (emptyObject === null) {
+  custmr.value = '';
+  email.value = '';
+  txt.value = '';
+} else {
+  custmr.value = emptyObject.userID;
+  email.value = emptyObject.email;
+  txt.value = emptyObject.message;
+}
 
 form.addEventListener('submit', (e) => {
   if (checkEmail(email.value)) {
