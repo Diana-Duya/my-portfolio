@@ -62,57 +62,31 @@ function checkEmail(emailAddress) {
   return false;
 }
 
-form.addEventListener('submit', (e) => {
-  if (checkEmail(email.value)) {
-    error.textContent = '';
-  } else {
-    e.preventDefault();
-    error.textContent = 'email should be in lowecase';
-  }
-});
-
 const userid = document.getElementById('name');
 const em = document.getElementById('email');
 const txt = document.getElementById('message');
 
 function storeData() {
   const testObject = {
-    name: localStorage.setItem('customerName', userid.value),
-    email: localStorage.setItem('customeremail', email.value),
-    message: localStorage.setItem('customerText', txt.value),
+    name: userid.value,
+    email: email.value,
+    message: txt.value,
   };
-  return testObject;
+  localStorage.setItem('store', JSON.stringify(testObject));
 }
 
-userid.value = localStorage.getItem('customerName');
-em.value = localStorage.getItem('customerName');
-txt.value = localStorage.getItem('customerName');
+const emptyObject = JSON.parse(localStorage.getItem('store'));
 
-storeData();
+userid.value = emptyObject.name;
+em.value = emptyObject.email;
+txt.value = emptyObject.message;
 
-userid.onchange = storeData;
-em.onchange = storeData;
-txt.onchange = storeData;
-
-// const formName = document.getElementById('name');
-// const emails = document.getElementById('email');
-// const formText = document.getElementById('message');
-
-// function autoFill() {
-//   const storageObj = {
-//     name: localStorage.setItem('customerName', formName.value),
-//     email: localStorage.setItem('customerEmail', email.value),
-//     customerInfo: localStorage.setItem('customerInfo', formText.value),
-//   };
-//   return storageObj;
-// }
-
-// formName.value = localStorage.getItem('customerName');
-// email.value = localStorage.getItem('customerEmail');
-// formText.value = localStorage.getItem('customerInfo');
-
-// autoFill();
-
-// formName.onchange = autoFill;
-// email.onchange = autoFill;
-// formText.onchange = autoFill;
+form.addEventListener('submit', (e) => {
+  if (checkEmail(email.value)) {
+    error.textContent = '';
+    storeData();
+  } else {
+    e.preventDefault();
+    error.textContent = 'email should be in lowecase';
+  }
+});
