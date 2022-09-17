@@ -61,34 +61,30 @@ function checkEmail(Diana) {
   }
   return false;
 }
-   const custmr = document.getElementById('name')
-   const txt = document.getElementById('message')
+const custmr = document.getElementById('name');
+const txt = document.getElementById('message');
 
+function storeData() {
+  const testObject = {
+    userID: custmr.value,
+    email: email.value,
+    message: txt.value,
+  };
+  localStorage.setItem('store', JSON.stringify(testObject));
+}
+const emptyObject = JSON.parse(localStorage.getItem('store'));
 
-  function storeData() {
-
-    const testObject = {
-      userID: custmr.value,
-      email: email.value,
-      message: txt.value
-    }
-    localStorage.setItem("store", JSON.stringify(testObject))
-  }
-    let emptyObject = JSON.parse(localStorage.getItem("store"))
-
-    custmr.value = emptyObject.userID
-    email.value = emptyObject.email
-    txt.value = emptyObject.message
+custmr.value = emptyObject.userID;
+email.value = emptyObject.email;
+txt.value = emptyObject.message;
 
 form.addEventListener('submit', (e) => {
   if (checkEmail(email.value)) {
     error.textContent = '';
-    storeData()
+    storeData();
   } else {
-    storeData()
+    storeData();
     e.preventDefault();
     error.textContent = 'Enter a valid email';
   }
 });
-
-
