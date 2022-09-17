@@ -55,38 +55,40 @@ const form = document.querySelector('.form');
 const email = document.querySelector('#email');
 const error = document.querySelector('.error');
 
-function checkEmail(emailAddress) {
-  if (emailAddress.match(/^[a-z@.0-9-_]*$/)) {
+function checkEmail(Diana) {
+  if (Diana.match(/^[a-z@.0-9-_]*$/)) {
     return true;
   }
   return false;
 }
+   const custmr = document.getElementById('name')
+   const txt = document.getElementById('message')
 
-const userid = document.getElementById('name');
-const em = document.getElementById('email');
-const txt = document.getElementById('message');
 
-function storeData() {
-  const testObject = {
-    name: userid.value,
-    email: email.value,
-    message: txt.value,
-  };
-  localStorage.setItem('store', JSON.stringify(testObject));
-}
+  function storeData() {
 
-const emptyObject = JSON.parse(localStorage.getItem('store'));
+    const testObject = {
+      userID: custmr.value,
+      email: email.value,
+      message: txt.value
+    }
+    localStorage.setItem("store", JSON.stringify(testObject))
+  }
+    let emptyObject = JSON.parse(localStorage.getItem("store"))
 
-userid.value = emptyObject.name;
-em.value = emptyObject.email;
-txt.value = emptyObject.message;
+    custmr.value = emptyObject.userID
+    email.value = emptyObject.email
+    txt.value = emptyObject.message
 
 form.addEventListener('submit', (e) => {
   if (checkEmail(email.value)) {
     error.textContent = '';
-    storeData();
+    storeData()
   } else {
+    storeData()
     e.preventDefault();
-    error.textContent = 'email should be in lowecase';
+    error.textContent = 'Enter a valid email';
   }
 });
+
+
