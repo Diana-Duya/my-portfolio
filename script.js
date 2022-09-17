@@ -61,11 +61,35 @@ function checkEmail(Diana) {
   }
   return false;
 }
+const custmr = document.getElementById('name');
+const txt = document.getElementById('message');
+
+const testObject = {};
+
+function storeData() {
+  testObject.userID = custmr.value;
+  testObject.email = email.value;
+  testObject.message = txt.value;
+
+  localStorage.setItem('store', JSON.stringify(testObject));
+}
+const emptyObject = JSON.parse(localStorage.getItem('store'));
+if (emptyObject === null) {
+  custmr.value = '';
+  email.value = '';
+  txt.value = '';
+} else {
+  custmr.value = emptyObject.userID;
+  email.value = emptyObject.email;
+  txt.value = emptyObject.message;
+}
 
 form.addEventListener('submit', (e) => {
   if (checkEmail(email.value)) {
     error.textContent = '';
+    storeData();
   } else {
+    storeData();
     e.preventDefault();
     error.textContent = 'Enter a valid email';
   }
